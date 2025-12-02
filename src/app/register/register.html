@@ -1,0 +1,35 @@
+<div class="RegisterBox">
+  <h2>Create Account</h2>
+
+  <form (ngSubmit)="onSubmit()" #form="ngForm" class="form">
+    <div class="FormBox">
+      <label>Username</label>
+      <input
+        type="text"
+        name="username"
+        [(ngModel)]="username"
+        required
+        placeholder="Enter username"
+        [class.error-input]="usernameEmpty"
+      />
+      <div class="error" *ngIf="usernameEmpty">Username cannot be empty!</div>
+    </div>
+
+    <div class="FormBox">
+      <label>Password</label>
+      <input
+        type="password"
+        name="password"
+        [(ngModel)]="password"
+        required
+        placeholder="Enter password"
+        [class.error-input]="passwordEmpty"
+      />
+      <div class="error" *ngIf="passwordEmpty">Password cannot be empty!</div>
+    </div>
+
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <div class="error" *ngIf="usernameExists">⚠ Username already exists!</div>
+</div>

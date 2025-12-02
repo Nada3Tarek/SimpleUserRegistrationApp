@@ -1,0 +1,11 @@
+<h2>Registered Users</h2>
+
+<ul class="user-list">
+  <li
+    *ngFor="let user of users; let i = index"
+    (click)="deleteUser(i)"
+    [class.weak]="user.password.length < 5"
+  >
+    {{ user.username }}
+  </li>
+</ul>

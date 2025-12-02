@@ -1,0 +1,105 @@
+.RegisterBox {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 22px 24px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.07);
+  animation: fadeInUp 0.6s ease;
+}
+.form-group input.error-input {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+.form-group .error {
+  margin-top: 6px;
+  font-size: 12px;
+}
+.RegisterBox h2 {
+  margin: 0 0 16px;
+  font-size: 22px;
+  color: #3d46ca;
+  font-weight: 700;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.FormBox label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475869;
+}
+
+.FormBox input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  outline: none;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+.FormBox input:focus {
+  border-color: #63cdf1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+button {
+  margin-top: 12px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #6366f1, #4670e5);
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(241, 99, 177, 0.4);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 15px;
+  background: #ffe4e6;
+  padding: 10px;
+  border-radius: 8px;
+  color: #be123c;
+  font-weight: 600;
+  animation: shake 0.4s ease;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-4px);
+  }
+  60% {
+    transform: translateX(4px);
+  }
+}
