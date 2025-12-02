@@ -19,7 +19,7 @@ The UI is simple, responsive, and focuses on clean interaction flow.
 ## 🖼 Preview
 
 ### User Registration App UI
-![User Registration App UI](https://stackblitz.com/edit/stackblitz-starters-12va9v6s)
+https://stackblitz.com/edit/stackblitz-starters-12va9v6s
 
 ---
 
