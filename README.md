@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Simple User Registration App ✨
 
 A clean and minimal Angular application that allows users to register with a username and password, view all registered users, and remove users from the list.  
